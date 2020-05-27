@@ -1,25 +1,13 @@
 
 # from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path
 from . import views
-#from django.conf.urls import url,include
-from django.urls import include, path
-
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
-    # path('admin/', admin.site.urls),
-    path('',include('user_end.urls')),
-    # path('',views.homepage,name='home'),
-    # path('eggs/',views.eggs),
-    path('count/',views.count,name='tareq'),
-    path('new/',views.new),
-    path('product/',views.prod,name='rosul'),
-    #path('index/',views.index,name='ind'),
-
+    path('',views.indexx),
 ]
 
 urlpatterns+= staticfiles_urlpatterns()
-
 
 
 
