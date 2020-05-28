@@ -17,4 +17,15 @@ def indexx(request):
   "printer"
 ]
     random.shuffle(thisdict)
-    return render(request,'user_end/product.html',{'img_name':var,'star':int,'names':thisdict})
+    return render(request,'user_end/home.html',{'img_name':var,'star':int,'names':thisdict})
+
+
+
+def product_page(request):
+    pikName=[
+     "apple",
+     "headphone",
+     "juice_pack",
+     "printer"
+    ]
+    return render(request,'user_end/product.html',{'pikuName':pikName})

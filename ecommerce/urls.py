@@ -13,7 +13,9 @@ urlpatterns = [
     # path('eggs/',views.eggs),
     path('count/',views.count,name='tareq'),
     path('new/',views.new),
-    path('product/',views.prod,name='rosul'),
+    # path('product/',views.prod,name='rosul'),
+     path('product/',include('user_end.urls')),
+
     #path('index/',views.index,name='ind'),
 
 ]

@@ -143,11 +143,41 @@
 	;
 	</script>
 </head>
+<body>
 
-	<body>
-		<header>
-			<!-- THIS THE HEADER PART -->
-				<div class="ui inverted vertical masthead center aligned segment image_back tareq">
+<!-- Following Menu -->
+
+<div class="ui large top fixed hidden menu">
+	<div class="ui container">
+		<a class="active item">Home</a>
+		<a class="item">Work</a>
+		<a class="item">Company</a>
+		<a class="item">Careers</a>
+		<div class="right menu">
+			<div class="item">
+				<a class="ui button">Log in</a>
+			</div>
+			<div class="item">
+				<a class="ui primary button">Sign Up</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+	<a class="active item">Home</a>
+	<a class="item">Work</a>
+	<a class="item">Company</a>
+	<a class="item">Careers</a>
+	<a class="item">Login</a>
+	<a class="item">Signup</a>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+	<div class="ui inverted vertical masthead center aligned segment image_back tareq">
 
 		<div class="ui container">
 			<div class="ui large secondary inverted pointing menu" style="border: none;">
@@ -172,17 +202,11 @@
 		</div>
 	</div>
 <br>
-		</header>
-		<main>
-			<!-- <h2>This is the main</h2> -->
-			<div class="wrapper">
-				{% block content %}
-				{% endblock %}
-			</div>
-		</main>
-		<footer>
-			<!-- this is the footer -->
-			<br>
+{% block content %}
+{% endblock %}
+<br>
+
+<br>
 <div class="ui inverted vertical footer segment">
 	<div class="ui container">
 		<div class="ui stackable inverted divided equal height stackable grid">
@@ -211,13 +235,14 @@
 		</div>
 	</div>
 </div>
-		</footer>
-		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-		<script>
-			$(document).foundation();
-		</script>
 
+</div>
+	<script type="text/javascript">
+		$('.ui.rating').rating({
+	initialRating: {{ star }},
+	maxRating: 5,
+});
+	</script>
 	<script>
 	$(document).ready(function(){
 	var header = $('.tareq');
@@ -247,6 +272,11 @@
 	header.css('background-image', backgrounds[0]);
 	});
 	</script>
-	</body>
+</body>
+</html>
 
-	</html>
+
+<!--
+<img srcset="elva-fairy-480w.jpg 480w,
+										 elva-fairy-800w.jpg 800w" sizes="(max-width: 600px) 480px,
+										800px" src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy"> -->

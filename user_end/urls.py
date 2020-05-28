@@ -5,6 +5,7 @@ from django.urls import path
 from . import views
 urlpatterns = [
     path('',views.indexx),
+     path('product/',views.product_page,name='rosul'),
 ]
 
 urlpatterns+= staticfiles_urlpatterns()

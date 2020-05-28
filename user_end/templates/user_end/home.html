@@ -1,0 +1,131 @@
+{% extends 'base_layout.html' %}
+{% block content%}
+{% load static %}
+<body>
+  <div class="ui container">
+    <div class="ui four cards">
+      <a class="card" href="{% url 'rosul' %}" >
+        <div class="image">
+          <img src="{% static '/products/'|add:names.0|add:'.jpg' %}">
+        </div>
+        <div class="header">{{ names.0 }}</div>
+        <div class="meta">
+          <a>550/- BDT </a>
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="{{ star }}"></div>
+        </div>
+      </a>
+      <div class="card">
+        <div class="image">
+          <img src="{% static '/products/'|add:names.1|add:'.jpg' %}">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="{{ star }}"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="{% static '/products/'|add:names.2|add:'.jpg' %}">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="3"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="{% static '/products/'|add:names.3|add:'.jpg' %}">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="4"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="{% static '/products/'|add:names.4|add:'.jpg' %}">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="4"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="{% static '/products/'|add:names.5|add:'.jpg' %}">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="4"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="{% static '/products/image.png' %}">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="3"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="{% static '/products/image.png' %}">
+        </div>
+
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="4"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="{% static '/products/image.png' %}">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="3"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="{% static '/products/image.png' %}">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="3"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="{% static '/products/image.png' %}">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="4"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="{% static '/products/image.png' %}">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <script type="text/javascript">
+    $('.ui.rating').rating({
+      initialRating: {{ star }},
+      maxRating: 5,
+
+    });
+  </script>
+</body>
+{% endblock %}
