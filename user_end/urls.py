@@ -4,7 +4,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('',views.indexx),
+    path('',views.indexx,name='home'),
      path('product/',views.product_page,name='rosul'),
 ]
 
