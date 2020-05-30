@@ -1,17 +1,6 @@
+{% extends 'base_layout.html' %}
+{% block content%}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="style-product.css" /> -->
-  <link rel="stylesheet" href="{% static 'style-product.css' %}">
-  <title>product</title>
-
-</head>
 <body>
 
   <br>
@@ -40,25 +29,21 @@
       <br><br>
       <span>Share</span>
       <button class="ui facebook button">
-      <i class="facebook icon"></i>
+        <i class="facebook icon"></i>
       </button>
       <button class="ui twitter button">
         <i class="twitter icon"></i>
       </button>
       <button class="ui google plus button">
-      <i class="google plus icon"></i>
+        <i class="google plus icon"></i>
       </button>
     </div>
     <br><br><br>
     <div class="ui tiny images">
-      <!-- <img class="ui image baccha" id="one" src="{% static '/products/clock.jpg' %}" onclick="changeImage('{% static '/products/clock.jpg' %}')"> -->
       <img class="ui image baccha" id="one" src="{% static '/products/'|add:pikuName.0|add:'.jpg' %}" onclick="changeImage('{% static '/products/'|add:pikuName.0|add:'.jpg' %}')">
       <img class="ui image baccha" id="one" src="{% static '/products/'|add:pikuName.1|add:'.jpg' %}" onclick="changeImage('{% static '/products/'|add:pikuName.1|add:'.jpg' %}')">
       <img class="ui image baccha" id="one" src="{% static '/products/'|add:pikuName.2|add:'.jpg' %}" onclick="changeImage('{% static '/products/'|add:pikuName.2|add:'.jpg' %}')">
       <img class="ui image baccha" id="one" src="{% static '/products/'|add:pikuName.3|add:'.jpg' %}" onclick="changeImage('{% static '/products/'|add:pikuName.3|add:'.jpg' %}')">
-      <!-- <img class="ui image baccha" id="two" src="{% static '/products/apple.jpg' %}" onclick="changeImage('product/apple-iphone-11-pro.jpg')">
-      <img class="ui image baccha" id="three" src="{% static '/products/headphone.jpg' %}" onclick="changeImage('product/headphone.jpg')">
-      <img class="ui image baccha" id="four" src="{% static '/products/printer.jpg' %}" onclick="changeImage('product/printer.jpg')"> -->
     </div>
     <div class="ui top attached tabular menu">
       <a class="item">
@@ -75,177 +60,230 @@
     <div class="ui container mr_top_bottom bg-color">
       <h2>Related Products</h2>
     </div>
-  <div class="ui four cards">
-    <div class="card">
-      <div class="image">
-        <img src="product/image.png">
-      </div>
-      <div class="header">Casio Clock</div>
-      <div class="meta">
-        <a>550/- BDT </a>
-      </div>
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="4"></div>
-      </div>
-    </div>
-     <div class="card">
-      <div class="image">
-        <img src="product/image.png">
-      </div>
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="4"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image">
-            <img src="product/image.png">
-      </div>
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="3"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image">
-           <img src="product/image.png">
-      </div>
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="4"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image">
-        <img src="product/image.png">
-      </div>
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="4"></div>
-      </div>
-    </div>
-     <div class="card">
-      <div class="image">
-        <img src="product/image.png">
-      </div>
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="4"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image">
-            <img src="product/image.png">
-      </div>
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="3"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image">
-           <img src="product/image.png">
-      </div>
-
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="4"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image">
-            <img src="product/image.png">
-      </div>
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="3"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image">
-           <img src="product/image.png">
-      </div>
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="3"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image">
-            <img src="product/image.png">
-      </div>
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="4"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="image">
-           <img src="product/image.png">
-      </div>
-      <div class="extra">
-        Rating:
-        <div class="ui star rating" data-rating="4"></div>
-      </div>
-    </div>
-  </div>
-
-
-
-    </div>
-  </div>
-
-  </div>
-  <br><br><br>
-  <div class="ui inverted vertical footer segment">
-    <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
-        <div class="three wide column">
-          <h4 class="ui inverted header">About</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Sitemap</a>
-            <a href="#" class="item">Contact Us</a>
-            <a href="#" class="item">Religious Ceremonies</a>
-            <a href="#" class="item">Gazebo Plans</a>
-          </div>
+    <div class="ui four cards">
+      <div class="card">
+        <div class="image">
+          <img src="product/image.png">
         </div>
-        <div class="three wide column">
-          <h4 class="ui inverted header">Services</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Banana Pre-Order</a>
-            <a href="#" class="item">DNA FAQ</a>
-            <a href="#" class="item">How To Access</a>
-            <a href="#" class="item">Favorite X-Men</a>
-          </div>
+        <div class="header">Casio Clock</div>
+        <div class="meta">
+          <a>550/- BDT </a>
         </div>
-        <div class="seven wide column">
-          <h4 class="ui inverted header">Footer Header</h4>
-          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="4"></div>
         </div>
       </div>
+      <div class="card">
+        <div class="image">
+          <img src="product/image.png">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="4"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="product/image.png">
+        </div>
+        <div class="extra">
+          Rating:
+          <div class="ui star rating" data-rating="3"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+         <img src="product/image.png">
+       </div>
+       <div class="extra">
+        Rating:
+        <div class="ui star rating" data-rating="4"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="product/image.png">
+      </div>
+      <div class="extra">
+        Rating:
+        <div class="ui star rating" data-rating="4"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="product/image.png">
+      </div>
+      <div class="extra">
+        Rating:
+        <div class="ui star rating" data-rating="4"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+        <img src="product/image.png">
+      </div>
+      <div class="extra">
+        Rating:
+        <div class="ui star rating" data-rating="3"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="image">
+       <img src="product/image.png">
+     </div>
+
+     <div class="extra">
+      Rating:
+      <div class="ui star rating" data-rating="4"></div>
     </div>
   </div>
-  <script
-          src="https://code.jquery.com/jquery-3.4.1.min.js"
-          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-          crossorigin="anonymous">
+  <div class="card">
+    <div class="image">
+      <img src="product/image.png">
+    </div>
+    <div class="extra">
+      Rating:
+      <div class="ui star rating" data-rating="3"></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+     <img src="product/image.png">
+   </div>
+   <div class="extra">
+    Rating:
+    <div class="ui star rating" data-rating="3"></div>
+  </div>
+</div>
+<div class="card">
+  <div class="image">
+    <img src="product/image.png">
+  </div>
+  <div class="extra">
+    Rating:
+    <div class="ui star rating" data-rating="4"></div>
+  </div>
+</div>
+<div class="card">
+  <div class="image">
+   <img src="product/image.png">
+ </div>
+ <div class="extra">
+  Rating:
+  <div class="ui star rating" data-rating="4"></div>
+</div>
+</div>
+</div>
+<!-- categories -->
+<div class="ui cards">
+  <div class="card" style="
+  margin-left: 23px;
+  ">
+  <div class="content">
+    <div class="header">Elliot Fu</div>
+    <div class="meta">Friend</div>
+    <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+    <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+    <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+  </div>
+</div>
+<div class="card" style="
+margin-left: 112px;
+">
+<div class="content" style="
+border-left-width: 0px;
+margin-left: 0px;
+">
+<div class="header">Elliot Fu</div>
+<div class="meta">Friend</div>
+<img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+<img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+<img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+</div>
+</div>
+<div class="card" style="
+margin-left: 100px;
+">
+<div class="content">
+  <div class="header">Elliot Fu</div>
+  <div class="meta">Friend</div>
+  <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+  <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+  <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+</div>
+</div>
 
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <script type="text/javascript">
-      $('.ui.rating').rating({
+</div>
+<!-- categories -->
+<!-- categories -->
+<div class="ui cards">
+  <div class="card" style="
+  margin-left: 23px;
+  ">
+  <div class="content">
+    <div class="header">Elliot Fu</div>
+    <div class="meta">Friend</div>
+    <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+    <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+    <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+  </div>
+</div>
+<div class="card" style="
+margin-left: 112px;
+">
+<div class="content" style="
+border-left-width: 0px;
+margin-left: 0px;
+">
+<div class="header">Elliot Fu</div>
+<div class="meta">Friend</div>
+<img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+<img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+<img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+</div>
+</div>
+<div class="card" style="
+margin-left: 100px;
+">
+<div class="content">
+  <div class="header">Elliot Fu</div>
+  <div class="meta">Friend</div>
+  <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+  <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+  <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+</div>
+</div>
+</div>
+<!-- categories -->
+
+
+</div>
+</div>
+
+</div>
+<br><br><br>
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous">
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script type="text/javascript">
+  $('.ui.rating').rating({
     initialRating: 3,
     maxRating: 5,
 
   });
-    </script>
-  <script type="text/javascript">
-    function changeImage(url) {
-      console.log(url);
+</script>
+<script type="text/javascript">
+  function changeImage(url) {
+        // console.log(url);
         document.getElementById("large").src =url;
-    }
-  </script>
+      }
+    </script>
 
-</body>
-</html>
+  </body>
+  {% endblock %}

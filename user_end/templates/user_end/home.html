@@ -3,9 +3,10 @@
 {% load static %}
 <body>
   <div class="ui container">
+    <b>Products</b>
     <div class="ui four cards">
-      <a class="card" href="{% url 'rosul' %}" >
-        <div class="image">
+      <div class="card"  >
+        <div class="image" onclick="redirect()">
           <img src="{% static '/products/'|add:names.0|add:'.jpg' %}">
         </div>
         <div class="header">{{ names.0 }}</div>
@@ -16,7 +17,7 @@
           Rating:
           <div class="ui star rating" data-rating="{{ star }}"></div>
         </div>
-      </a>
+      </div>
       <div class="card">
         <div class="image">
           <img src="{% static '/products/'|add:names.1|add:'.jpg' %}">
@@ -117,7 +118,90 @@
           <div class="ui star rating" data-rating="4"></div>
         </div>
       </div>
+      </div>
+      <br><br>
+      <b>Categories</b>
+        <!-- categories -->
+        <div class="ui cards">
+    <div class="card" style="
+    margin-left: 23px;
+">
+      <div class="content">
+        <div class="header">Elliot Fu</div>
+        <div class="meta">Friend</div>
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+      </div>
     </div>
+    <div class="card" style="
+    margin-left: 112px;
+">
+      <div class="content" style="
+    border-left-width: 0px;
+    margin-left: 0px;
+">
+        <div class="header">Elliot Fu</div>
+        <div class="meta">Friend</div>
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+      </div>
+    </div>
+    <div class="card" style="
+    margin-left: 100px;
+">
+      <div class="content">
+        <div class="header">Elliot Fu</div>
+        <div class="meta">Friend</div>
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+      </div>
+    </div>
+
+  </div>
+  <!-- categories -->
+  <!-- categories -->
+  <div class="ui cards">
+    <div class="card" style="
+    margin-left: 23px;
+">
+      <div class="content">
+        <div class="header">Elliot Fu</div>
+        <div class="meta">Friend</div>
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+      </div>
+    </div>
+    <div class="card" style="
+    margin-left: 112px;
+">
+      <div class="content" style="
+    border-left-width: 0px;
+    margin-left: 0px;
+">
+        <div class="header">Elliot Fu</div>
+        <div class="meta">Friend</div>
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+      </div>
+    </div>
+    <div class="card" style="
+    margin-left: 100px;
+">
+      <div class="content">
+        <div class="header">Elliot Fu</div>
+        <div class="meta">Friend</div>
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+        <img class="ui middle aligned tiny image" src="/static/products/camera.jpg">
+      </div>
+    </div>
+  </div>
+  <!-- categories -->
   </div>
   <br>
   <script type="text/javascript">
@@ -126,6 +210,11 @@
       maxRating: 5,
 
     });
+  </script>
+  <script>
+    function redirect() {
+      location.href="product/";
+    }
   </script>
 </body>
 {% endblock %}
