@@ -15,7 +15,6 @@ urlpatterns = [
     path('new/',views.new),
     # path('product/',views.prod,name='rosul'),
      path('',include('user_end.urls')),
-
     #path('index/',views.index,name='ind'),
 
 ]
