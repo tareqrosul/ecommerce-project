@@ -15,9 +15,7 @@ Books can be searched based on names, categories etc.
 Customers can enjoy the service without any physical interaction with people
 
 # REQUIREMENT SPECIFICATION
-**Python 3.8.1**
-**DJango (3, 0, 2, 'final', 0)**
+- **Python 3.8.1**
+- **DJango (3, 0, 2, 'final', 0)**
 
-
-
-
+# Project Structure
