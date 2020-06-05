@@ -11,7 +11,9 @@ Our website can be used by both the owner of the e-commerce site and the custome
 ## Easy surfing: 
 Books can be searched based on names, categories etc.
 
-##
+## E-Commerce Concept:
+Customers can enjoy the service without any physical interaction with people
+
 
 
 
