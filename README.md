@@ -14,6 +14,10 @@ Books can be searched based on names, categories etc.
 ## E-Commerce Concept:
 Customers can enjoy the service without any physical interaction with people
 
+# REQUIREMENT SPECIFICATION
+**Python 3.8.1**
+**DJango (3, 0, 2, 'final', 0)**
+
 
 
 
